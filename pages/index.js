@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <div className='h-screen w-full flex flex-col items-center justify-center space-y-8'>
-        <Image src='/logo.png' className='h-64 w-64' alt='urbe.eth logo' />
+        <img src='/logo.png' className='h-64 w-64' alt='urbe.eth logo' />
         <h1 className='font-bold text-2xl animate-pulse'>Work in progress.</h1>
       </div>
     </div>
