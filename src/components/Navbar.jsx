@@ -44,13 +44,13 @@ export default function Navbar() {
     >
       {color === "magenta" ? (
         <img
-          src="/logo-white.png"
+          src={process.env.PUBLIC_URL + "/logo-white.png"}
           className="h-12 mt-1 cursor-pointer"
           onClick={() => navigate("/")}
         />
       ) : (
         <img
-          src="/logo.png"
+          src={process.env.PUBLIC_URL + "/logo.png"}
           className="h-12 mt-1 cursor-pointer"
           onClick={() => navigate("/")}
         />
