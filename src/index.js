@@ -5,12 +5,22 @@ import {createHashRouter, RouterProvider} from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import Root from "./routes/root";
 import Home from "./pages/Home";
+import Profile, {loader as addressLoader} from "./pages/Profile";
+import Kudos, {loader as kudosLoader} from "./pages/Kudos";
 
 const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
-    children: [{path: "/", element: <Home />}],
+    children: [
+      {path: "/", element: <Home />},
+      {path: "/profile/:address", element: <Profile />, loader: addressLoader},
+      {
+        path: "/kudos/:address/:tokenId",
+        element: <Kudos />,
+        loader: kudosLoader,
+      },
+    ],
   },
 ]);
 
