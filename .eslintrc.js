@@ -12,20 +12,15 @@ module.exports = {
     "prettier",
     "plugin:prettier/recommended",
   ],
-  parser: "@typescript-eslint/parser",
   ignorePatterns: [
     "/lib/**/*", // Ignore built files.
     // "/test/**",
   ],
-  plugins: ["prettier", "@typescript-eslint", "import"],
+  plugins: ["prettier", "import"],
   rules: {
     "new-cap": "off",
     "import/no-unresolved": 0,
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {argsIgnorePattern: "^_", varsIgnorePattern: "^_"},
-    ],
     "import/order": [
       "warn",
       {
@@ -39,7 +34,6 @@ module.exports = {
         ],
       },
     ],
-    "@typescript-eslint/no-explicit-any": "off",
     "require-jsdoc": "off",
     "object-curly-spacing": "warn",
     "array-bracket-spacing": "warn",
