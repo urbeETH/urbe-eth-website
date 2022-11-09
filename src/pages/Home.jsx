@@ -19,7 +19,7 @@ export default function Home() {
         <div
           className="min-h-screen bg-[#E1F6E8]"
           style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + "/ttten.svg"})`
+            backgroundImage: `url(${process.env.PUBLIC_URL + "/ttten.svg"})`,
           }}
         >
           <div className="h-screen flex flex-col items-center justify-center max-w-2xl mx-auto text-center space-y-4">
@@ -66,7 +66,7 @@ export default function Home() {
                 process.env.PUBLIC_URL + "/background.png"
               })`,
               backgroundSize: "cover",
-              backgroundRepeat: "no-repeat"
+              backgroundRepeat: "no-repeat",
             }}
           />
         </div>
